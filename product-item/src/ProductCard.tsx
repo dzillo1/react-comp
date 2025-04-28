@@ -6,7 +6,6 @@ import HightProtein from "./assets/high-protein.svg"
 
 function productCard(){
     return(
-        
             <div className="card product-card">
                 <div className="card-header p-0">
                     <img src={FoodImage} alt="Italian Sausage and Turkey Pepperoni Pizza" className="food-img img-fluid"/>
@@ -23,7 +22,6 @@ function productCard(){
                     <QuantityStepper />
                 </div>
             </div>
-      
     )
 }
 
