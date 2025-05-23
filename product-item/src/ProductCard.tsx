@@ -4,7 +4,7 @@ import Frozen from "./assets/frozen.svg"
 import Glp1 from "./assets/glp1.svg"
 import HightProtein from "./assets/high-protein.svg"
 
-function productCard(){
+function ProductCard(){
     return(
             <div className="card product-card">
                 <div className="card-header p-0">
@@ -25,4 +25,4 @@ function productCard(){
     )
 }
 
-export default productCard
+export default ProductCard
