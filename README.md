@@ -1,2 +1,2 @@
 # react
-react component
+react components
