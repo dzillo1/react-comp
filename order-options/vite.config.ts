@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: '../../dist/order-options',
-    emptyOutDir: true,
+    emptyOutDir: false,
   },
 })

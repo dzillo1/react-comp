@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: '../../dist/product-item',
-    emptyOutDir: true,
+    emptyOutDir: false,
   },
 })
