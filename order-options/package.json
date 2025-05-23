@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://dzillo1.github.io/react-comp",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
