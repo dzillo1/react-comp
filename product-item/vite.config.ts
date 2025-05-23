@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/react-comp/product-item/',
   plugins: [react()],
   build: {
-    outDir: '../../dist/product-item',
+    outDir: '../dist/product-item',
     emptyOutDir: false,
   },
 })

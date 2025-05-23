@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/react-comp/order-options/',
   plugins: [react()],
   build: {
-    outDir: '../../dist/order-options',
+    outDir: '../dist/order-options',
     emptyOutDir: false,
   },
 })
