@@ -1,6 +1,6 @@
 body {
     background-color: antiquewhite;
-    margin:0 auto;
+    margin:2rem auto 0;
 }
 #root{
     margin:0 auto;
@@ -8,6 +8,9 @@ body {
 }
 p, h2{
     margin:0;
+}
+.nav-tabs .nav-link{
+    background-color:#fff;
 }
 #orderOptions .oo-wrap {
     background-color: #fff;

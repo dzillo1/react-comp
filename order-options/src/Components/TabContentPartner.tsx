@@ -1,6 +1,6 @@
 import MealPlanOption from "./MealPlanOption";
 
-function TabContent() {
+function TabContentPartner() {
     return (
         <div className="bg-white p-3">
             <div className="container">
@@ -16,8 +16,8 @@ function TabContent() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="price-per-day d-flex justify-content-between">
-                            <p>Price per day</p>
-                            <p className="price-day">$11.07</p>
+                            <p>Price per day per person:</p>
+                            <p className="price-day">$10.02</p>
                         </div>
                     </div>
                 </div>
@@ -26,4 +26,4 @@ function TabContent() {
     );
 }
 
-export default TabContent
+export default TabContentPartner

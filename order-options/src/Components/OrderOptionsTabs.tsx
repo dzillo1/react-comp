@@ -1,6 +1,7 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import TabContent from './TabContent';
+import TabContentPartner from './TabContentPartner';
 
 function OrderOptionsTabs() {
   return (
@@ -12,20 +13,16 @@ function OrderOptionsTabs() {
                 <Tabs
                   defaultActiveKey="women"
                   id="orderOptionsNavTabs"
-                  className="mb-3 bg-white"
+                  className=""
                 >
                   <Tab eventKey="women" title="Women">
-                    <TabContent>
-
-                    </TabContent>
+                    <TabContent />
                   </Tab>
                   <Tab eventKey="men" title="Men">
-                    <TabContent>
-
-                    </TabContent>
+                    <TabContent />
                   </Tab>
                   <Tab eventKey="partners" title="Partners">
-                    Partners
+                    <TabContentPartner />
                   </Tab>
                 </Tabs>
             </div>
