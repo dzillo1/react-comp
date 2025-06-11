@@ -1,7 +1,6 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import TabContent from './TabContent';
-import TabContentPartner from './TabContentPartner';
 
 function OrderOptionsTabs() {
   return (
@@ -13,16 +12,25 @@ function OrderOptionsTabs() {
                 <Tabs
                   defaultActiveKey="women"
                   id="orderOptionsNavTabs"
-                  className=""
+                  className="tk-korolev tabs"
                 >
-                  <Tab eventKey="women" title="Women">
-                    <TabContent />
+                  <Tab 
+                  eventKey="women" 
+                  title="Women"
+                  >
+                    <TabContent type="women" />
                   </Tab>
-                  <Tab eventKey="men" title="Men">
-                    <TabContent />
+                  <Tab 
+                  eventKey="men" 
+                  title="Men"
+                  >
+                    <TabContent type="men" />
                   </Tab>
-                  <Tab eventKey="partners" title="Partners">
-                    <TabContentPartner />
+                  <Tab 
+                  eventKey="partners" 
+                  title="Partners"
+                  >
+                    <TabContent type="partners" />
                   </Tab>
                 </Tabs>
             </div>
