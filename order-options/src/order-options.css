@@ -9,8 +9,21 @@ body {
 p, h2{
     margin:0;
 }
-#orderOptions .nav-tabs{
-    
+.fw-900{
+    font-weight:900;
+}
+input[type=checkbox] {
+    background: #fff;
+    border-color: #ccc;
+    height: 20px;
+    width: 20px;
+}
+input:checked[type="checkbox"] {
+    background-color: #fff;
+    color:#006B00
+}
+input[type="checkbox"]:checked {
+    background: url(https://www.nutrisystem.com/images/diet-plans/chk-grn-chkbx.svg) 50% no-repeat;
 }
 #orderOptions .nav-tabs .nav-link{
     background-color:#fff;
@@ -143,6 +156,38 @@ color: #29353A;
     left: 50%;
     transform: translateX(-50%);
 }
+#addShakes{
+    background: #fff;
+    border-radius: 1rem;
+    border: 1px solid #bfc2c4; 
+}
+
+#addShakes .offer-link{
+    padding: .5rem 1rem;
+    background-color: #EFF6E4;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#flavSelect{
+    padding: 0 1rem 1rem;
+}
+.flav-select-transition {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.flav-select-transition.show {
+  max-height: 500px;
+  opacity: 1;
+}
+.flav-select-transition select {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 
 
@@ -161,7 +206,6 @@ color: #29353A;
     }
 
     #orderOptions .option-cat button {
-        width: 10.5rem;
         flex-grow:0;
     }
 
