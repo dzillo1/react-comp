@@ -3,6 +3,7 @@ import DaysMealsWeekOption from "./DaysMealsWeekOption";
 import MealPlanOption from "./MealPlanOption";
 import MyAgeOption from "./MyAgeOption";
 import MenuOption from "./MenuOption";
+import ShipmentOption from "./ShipmentOption";
 import ShakesOffer from "./ShakesOffer";
 import mbgImg from "../assets/2020-MBG-GoldSeal.svg"
 
@@ -27,7 +28,7 @@ function TabContent({type}: TabContentProps) {
                         <MyAgeOption />
                         <DaysMealsWeekOption />
                         <MenuOption />
-                        <h2 className="tk-korolev">Purchase Options</h2>
+                        <ShipmentOption />
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="pricing-summary d-flex flex-column gap-3">

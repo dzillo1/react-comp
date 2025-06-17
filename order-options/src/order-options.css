@@ -120,6 +120,7 @@ color: #29353A;
     font-family: Arial, Helvetica, sans-serif;
     color: #006b00;
     text-align: right;
+    line-height:1;
 }
 
 #orderOptions .more-info-link {
@@ -200,9 +201,26 @@ color: #29353A;
     font-size: .875rem;
 }
 
-
-
-
+#orderOptions hr {
+    border-top: 1px solid #7C7F82;
+    margin:0;
+}
+.delivery-btn{
+    display: flex;
+    align-items:center;
+    height: 60px;
+    background: #fff;
+    border: 2px solid #bfc2c4;
+    border-radius: 100px;
+    padding: 8px 36px; 
+}
+.del-type{
+    line-height:1;
+}
+.del-price, .per{
+        font-weight: 400;
+    font-size: 0.875em;
+}
 
 @media(max-width:375px) {
     #orderOptions .chf-pk-co {
