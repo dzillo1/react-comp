@@ -9,7 +9,7 @@ function DaysMealsWeekOption(){
 
     return(
         <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title tk-korolev fw-700 d-flex align-items-center  justify-content-between"><span>Days of Meals per week</span> 
+            <p className="option-title d-flex align-items-center  justify-content-between"><span className="tk-korolev fw-700">Days of Meals per week</span> 
                 <a 
                 href="#" 
                // onClick={}

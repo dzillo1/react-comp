@@ -9,7 +9,7 @@ function MyAgeOption(){
 
     return(
         <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title tk-korolev fw-700 d-flex align-items-center justify-content-between"><span>My Age</span> 
+            <p className="option-title d-flex align-items-center justify-content-between"><span className="tk-korolev fw-700">My Age</span> 
                 <a 
                 href="#" 
                // onClick={}

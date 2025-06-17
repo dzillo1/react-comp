@@ -10,7 +10,8 @@ function MealPlanOption(){
 
     return(
         <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title tk-korolev fw-700 d-flex align-items-center "><span>Meal Plan</span> 
+            <p className="option-title d-flex align-items-center ">
+                <span className="tk-korolev fw-700">Meal Plan</span> 
                 <a 
                 href="#" 
                // onClick={}
