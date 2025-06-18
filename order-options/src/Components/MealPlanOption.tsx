@@ -9,19 +9,19 @@ function MealPlanOption(){
     };
 
     return(
-        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title d-flex align-items-center ">
+        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between">
+            <p className="option-title d-flex align-items-center flex-md-column align-items-md-start">
                 <span className="tk-korolev fw-700">Meal Plan</span> 
                 <a 
                 href="#" 
                // onClick={}
                 data-target="#program-type-modal" 
                 data-toggle="modal" 
-                className="more-info-link d-block ms-auto"
+                className="more-info-link d-block ms-auto ms-md-0"
                 >More info
                 </a>
             </p> 
-            <div className="d-flex justify-content-between gap-3 align-items-end w-100">
+            <div className="d-flex justify-content-between gap-3 align-items-end">
                 <button 
                 type="button" 
                 aria-pressed="true" 
@@ -29,10 +29,10 @@ function MealPlanOption(){
                 value="classic" 
                 id="classic" 
                 name="meal-plan" 
-                className={`w-50 ${selectedPlan === "classic" ? "selected" : ""}`}
+                className={selectedPlan === "classic" ? "selected" : ""}
                 >Signature
                 </button> 
-                <div className="d-flex flex-column w-50">
+                <div className="d-flex flex-column btn-callout">
                     <span 
                     className="option-label bg-green-darker tk-korolev text-white text-uppercase fw-700"
                     >Hearty Inspirations

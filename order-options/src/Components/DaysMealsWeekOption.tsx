@@ -8,8 +8,9 @@ function DaysMealsWeekOption(){
             };
 
     return(
-        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title d-flex align-items-center  justify-content-between"><span className="tk-korolev fw-700">Days of Meals per week</span> 
+        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between">
+            <p className="option-title d-flex align-items-center justify-content-between flex-md-column align-items-md-start">
+                <span className="tk-korolev fw-700">Days of Meals per week</span> 
                 <a 
                 href="#" 
                // onClick={}
@@ -19,7 +20,7 @@ function DaysMealsWeekOption(){
                 >More info
                 </a>
             </p> 
-            <div className="d-flex justify-content-between gap-3 align-items-end w-100">
+            <div className="d-flex justify-content-between gap-3 align-items-end">
                 <button 
                     type="button" 
                    onClick={handleClick}
@@ -27,7 +28,7 @@ function DaysMealsWeekOption(){
                     id="mostDays" 
                     name="days-meals-week" 
                     aria-pressed="false" 
-                    className={`w-50 ${selectDays === "most-days" ? "selected" : ""}`}
+                    className={selectDays === "most-days" ? "selected" : ""}
                 >5 Days
                 </button> 
                     <button 
@@ -37,7 +38,7 @@ function DaysMealsWeekOption(){
                     id="everyDay" 
                     name="days-meals-week" 
                     aria-pressed="false" 
-                    className={`w-50 ${selectDays === "every-day" ? "selected" : ""}`}
+                    className={selectDays === "every-day" ? "selected" : ""}
                     >7 Days
                     </button>
             </div>

@@ -25,20 +25,27 @@ input:checked[type="checkbox"] {
 input[type="checkbox"]:checked {
     background: url(https://www.nutrisystem.com/images/diet-plans/chk-grn-chkbx.svg) 50% no-repeat;
 }
+.tab-content{
+    padding:0 0 1rem 0;
+    background-color: #fff;
+    border-radius: 0 0 .5rem .5rem;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.17); 
+}
 #orderOptions .nav-tabs .nav-link{
     background-color:#fff;
     color: #7C7F82;
     font-weight:900;
     padding: .75rem .875rem;
     border-radius:0;
+    font-size: 1.125rem;
 }
 #orderOptions .tabs{
     background-color: #fff;
-    padding: 1rem 1.5rem 0;
+    padding: 1rem .5rem 0;
     border-radius:.5rem .5rem 0 0;
     border-bottom:0;
     width:auto;
-    gap:2rem;
+    gap:1rem;
     justify-content: center;
     padding-bottom: 2rem;
 }
@@ -77,6 +84,14 @@ color: #29353A;
     font-family: korolev, arial, sans-serif;
     line-height: normal;
 }
+#orderOptions .option-cat .btn-callout, #orderOptions .option-cat button{
+    width:50%;
+}
+#orderOptions .option-cat .btn-callout button{
+    width:auto
+}
+
+
 #orderOptions .option-cat button.selected {
     background: #f0f7ec;
     border: 2px solid #64a535;
@@ -84,9 +99,7 @@ color: #29353A;
 }
 
 
-#orderOptions button#favorites {
-    width: auto;
-}
+
 
 #orderOptions #submitBtn {
     background: #f76800;
@@ -128,6 +141,7 @@ color: #29353A;
     white-space: nowrap;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+    color: #00598a;
 }
 
 #orderOptions .price-meal,
@@ -242,7 +256,15 @@ color: #29353A;
         margin: 0 auto;
     }
     #orderOptions .tabs{
-    width:28%;
+    width:50%;
+    padding: .25rem .5rem 0;
+    gap:2rem;
+    }
+    #orderOptions .option-cat .btn-callout, #orderOptions .option-cat button{
+        width:200px;
+    }
+    .tab-content{
+        padding:2rem 0;
     }
 }
 
@@ -250,10 +272,22 @@ color: #29353A;
     #orderOptions .chf-pk-co {
         width: 9rem;
     }
+    #orderOptions .option-cat .btn-callout, #orderOptions .option-cat button {
+        width: 145px;
+    }
+    .option-label {
+        width: 95%
+    }
 }
 
 @media(min-width:1200px) {
     #orderOptions .oo-wrap {
         padding: 2rem 1.5rem;
+    }
+    .tab-content{
+        padding: 2.25rem 1.5rem;
+    }
+    .price-col{
+        padding-left: 2.813rem;
     }
 }

@@ -9,21 +9,21 @@ function MenuOptions(){
         };
 
     return(
-        <div id="menuOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title d-flex align-items-center">
+        <div id="menuOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between">
+            <p className="option-title d-flex align-items-center flex-md-column align-items-md-start">
             <span className="tk-korolev fw-700">Menu</span> 
             <a 
             href="#" 
             // onClick={}
             data-bs-target="#best-for-me" 
             data-bs-toggle="modal" 
-            className="more-info-link d-block ms-auto">
+            className="more-info-link d-block ms-auto ms-md-0">
                 More info
             </a>
             </p> 
-            <div className="d-flex justify-content-between gap-3 align-items-end w-100">
+            <div className="d-flex justify-content-between gap-3 align-items-end">
                 
-                    <div className="d-flex flex-column w-50">
+                    <div className="d-flex flex-column btn-callout">
                         <span 
                         className="option-label bg-green-darker tk-korolev text-white text-uppercase fw-700">Best for first order</span> 
                         <button 
@@ -45,7 +45,7 @@ function MenuOptions(){
                     value="custom" 
                     id="custom" 
                     name="menuoption" 
-                    className={`w-50 ${selectedPlan === "custom" ? "selected" : ""}`}>
+                    className={selectedPlan === "custom" ? "selected" : ""}>
                         I’ll Pick My Menu
                     </button>
                 </div>

@@ -15,22 +15,22 @@ function TabContent({type}: TabContentProps) {
 
     
     return (
-        <div className="bg-white pb-3">
+       
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-6 mb-3">
+                    <div className="col-12 col-lg-6 mb-3">
                         <h2 className="tk-korolev">Customize your program</h2>
                     </div>
                 </div>
-                <div className="row gap-3 gap-md-0 align-items-start">
-                    <div className="col-12 col-md-6">
+                <div className="row gap-3 gap-lg-0 align-items-start">
+                    <div className="col-12 col-lg-6">
                         <MealPlanOption />
                         <MyAgeOption />
                         <DaysMealsWeekOption />
                         <MenuOption />
                         <ShipmentOption />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-lg-6 price-col">
                         <div className="pricing-summary d-flex flex-column gap-3">
                             <div className="border-bottom tk-korolev pb-2 d-flex justify-content-between">
                                 <p>
@@ -51,7 +51,7 @@ function TabContent({type}: TabContentProps) {
                     <button type="submit" id="submitBtn" className="btn btn-default">Continue</button>
 
                     {type !== 'partners' && (
-                        <div className="mbg  mt-4 d-flex gap-2">
+                        <div className="mbg  mt-4 d-flex justify-content-center align-items-center gap-2">
                             <img alt="Money Back Guarantee" height="47" width="auto" src={mbgImg} />
                             <p className="mbg-text tk-korolev fw-900">Try it and love it. Money back guaranteed. <a href="#MBG" data-bs-target="#MBG" data-bs-toggle="modal" className="more-info-link">Details</a></p>
                         </div>
@@ -60,7 +60,7 @@ function TabContent({type}: TabContentProps) {
                     </div>
                 </div>
             </div>
-        </div>
+       
     );
 }
 

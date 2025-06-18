@@ -8,8 +8,9 @@ function MyAgeOption(){
         };
 
     return(
-        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3">
-            <p className="option-title d-flex align-items-center justify-content-between"><span className="tk-korolev fw-700">My Age</span> 
+        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between">
+            <p className="option-title d-flex align-items-center justify-content-between flex-md-column align-items-md-start">
+                <span className="tk-korolev fw-700">My Age</span> 
                 <a 
                 href="#" 
                // onClick={}
@@ -19,7 +20,7 @@ function MyAgeOption(){
                 >More info
                 </a>
             </p> 
-            <div className="d-flex justify-content-between gap-3 align-items-end w-100">
+            <div className="d-flex justify-content-between gap-3 align-items-end">
                 <button 
                     type="button" 
                    onClick={handleClick}
@@ -27,7 +28,7 @@ function MyAgeOption(){
                     id="allAges" 
                     name="myage" 
                     aria-pressed="false" 
-                    className={`w-50 ${selectedAge === "allages" ? "selected" : ""}`}
+                    className={selectedAge === "allages" ? "selected" : ""}
                 >All Ages
                 </button> 
                     <button 
@@ -37,7 +38,7 @@ function MyAgeOption(){
                     id="over50" 
                     name="myage" 
                     aria-pressed="false" 
-                    className={`w-50 ${selectedAge === "over50" ? "selected" : ""}`}
+                    className={selectedAge === "over50" ? "selected" : ""}
                     >50 and Over
                     </button>
             </div>
