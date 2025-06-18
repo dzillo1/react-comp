@@ -33,6 +33,14 @@
   ],
   "shipping": [
     {
+      "label": "Women Signature Pre-pay and Save",
+      "price": 409
+    },
+    {
+      "label": "Women High Protein Pre-pay and Save",
+      "price": 462
+    },
+    {
       "id": 1,
       "type": "one-time",
       "label": "One-Time Shipping",

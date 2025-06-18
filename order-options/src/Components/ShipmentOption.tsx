@@ -9,6 +9,14 @@ function ShipmentOption(){
         setSelectedShip(e.currentTarget.value);
     };
 
+    const [prePaySave, setPrePaySave] = useState(409);
+    const [autoDeliveryPrice, setautoDeliveryPrice] = useState(309.99);
+    const [bogoPrice, setbogoPrice] = useState(278.99);
+
+
+
+    
+
     return (
         <>
         <h2 className="tk-korolev mt-4 mb-2">Purchase Options</h2>
@@ -32,12 +40,12 @@ function ShipmentOption(){
                                             Monthly Auto-Delivery
                                         </div> 
                                     <div className="d-flex">
-                                        <div className="del-price">$309.99 </div> 
+                                        <div className="del-price">{`$${autoDeliveryPrice}`}</div> 
                                         <div className="per">/first shipment</div></div>
                                     </div>
                                 </button>
                                 <div className="d-flex align-items-center gap-2">
-                                    <p className="fw-700 tk-korolev">or Pre-pay &amp; Save up to $409!:</p> <hr/>
+                                    <p className="fw-700 tk-korolev">{`or Pre-pay & Save up to $${prePaySave}!`}</p> <hr/>
                                 </div>
     
                                 <button 
@@ -54,7 +62,7 @@ function ShipmentOption(){
                                             Pay for 2 Shipments Now
                                         </span> 
                                         <div className="d-flex">
-                                            <span className="del-price">$278.99 </span> 
+                                            <span className="del-price">{`$${bogoPrice}`}</span> 
                                             <span className="per">/shipment</span>
                                         </div>
                                     </div>
