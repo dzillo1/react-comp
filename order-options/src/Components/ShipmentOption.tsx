@@ -1,4 +1,14 @@
+import React, { useState } from "react";
+
+
 function ShipmentOption(){
+
+    const [selectedShip, setSelectedShip] = useState("autodelivery");
+
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        setSelectedShip(e.currentTarget.value);
+    };
+
     return (
         <>
         <h2 className="tk-korolev mt-4 mb-2">Purchase Options</h2>
@@ -13,8 +23,10 @@ function ShipmentOption(){
                                 id="autoDelivery" 
                                 value="autodelivery" 
                                 name="delivery"
+                                onClick={handleClick} 
                                 aria-pressed="false" 
-                                className="delivery-btn">
+                                className={"delivery-btn" + (selectedShip === "autodelivery" ? " selected" : "")}
+                                >
                                     <div className="d-flex flex-column">
                                         <div className="del-type fw-900 tk-korolev">
                                             Monthly Auto-Delivery
@@ -32,9 +44,11 @@ function ShipmentOption(){
                                 type="button" 
                                 id="bogo"
                                 value="bogo"
-                                name="delivery d-flex align-items-center"
+                                name="delivery"
+                                onClick={handleClick} 
                                 aria-pressed="false"
-                                className="delivery-btn">
+                                className={"delivery-btn" + (selectedShip === "bogo" ? " selected" : "")}
+                                >
                                     <div className="d-flex flex-column justify-content-between">
                                         <span className="del-type d-flex justify-content-between fw-900 tk-korolev">
                                             Pay for 2 Shipments Now
@@ -47,8 +61,16 @@ function ShipmentOption(){
                                     <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $62</span> 
                                 </button>
     
-                                <button type="button" value="pre3pay" id="pre3pay" name="delivery"  aria-pressed="false" className="delivery-btn">
-                                    <div className="d-flex flex-column">
+                                <button 
+                                type="button" 
+                                value="pre3pay" 
+                                id="pre3pay" 
+                                name="delivery"  
+                                onClick={handleClick} 
+                                aria-pressed="false" 
+                                className={"delivery-btn" + (selectedShip === "pre3pay" ? " selected" : "")}
+                                >
+                                <div className="d-flex flex-column">
                                     <span className="del-type fw-900 tk-korolev">
                                         Pay for 3 Shipments Now 
                                     </span> 
@@ -62,7 +84,15 @@ function ShipmentOption(){
                                     <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $140</span> 
                                 </button>
     
-                                <button type="button" value="pre4pay" id="pre4pay" name="delivery"  aria-pressed="false" className="delivery-btn">
+                                <button 
+                                type="button" 
+                                value="pre4pay" 
+                                id="pre4pay" 
+                                name="delivery"  
+                                onClick={handleClick} 
+                                aria-pressed="false" 
+                                className={"delivery-btn" + (selectedShip === "pre4pay" ? " selected" : "")}
+                                >
                                     <div className="d-flex flex-column">
                                     <span className="del-type fw-900 tk-korolev">
                                         Pay for 4 Shipments Now 
@@ -78,7 +108,15 @@ function ShipmentOption(){
                                     <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $211</span> 
                                 </button>
     
-                                <button type="button" value="pre6pay" id="pre6pay" name="delivery"  aria-pressed="false" className="delivery-btn">
+                                <button 
+                                type="button" 
+                                value="pre6pay" 
+                                id="pre6pay" 
+                                name="delivery" 
+                                onClick={handleClick}  
+                                aria-pressed="false" 
+                                className={"delivery-btn" + (selectedShip === "pre6pay" ? " selected" : "")}
+                                >
                                     <div className="ship-btn-txt">
                                     <span className="del-type fw-900 tk-korolev">
                                         Pay for 6 Shipments Now 

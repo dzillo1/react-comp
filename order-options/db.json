@@ -1,0 +1,66 @@
+{
+  "programs": [
+    {
+      "id": 1,
+      "category": "Women",
+      "name": "Women's Basic Plan",
+      "price": 25
+    },
+    {
+      "id": 2,
+      "category": "Women",
+      "name": "Women's Premium Plan",
+      "price": 45
+    },
+    {
+      "id": 3,
+      "category": "Men",
+      "name": "Men's Basic Plan",
+      "price": 20
+    },
+    {
+      "id": 4,
+      "category": "Men",
+      "name": "Men's Premium Plan",
+      "price": 40
+    },
+    {
+      "id": 5,
+      "category": "Partner",
+      "name": "Partner Plan",
+      "price": 60
+    }
+  ],
+  "shipping": [
+    {
+      "id": 1,
+      "type": "one-time",
+      "label": "One-Time Shipping",
+      "price": 5
+    },
+    {
+      "id": 2,
+      "type": "prepay-2",
+      "label": "Pre-Pay 2 Shipments",
+      "price": 9
+    },
+    {
+      "id": 3,
+      "type": "prepay-3",
+      "label": "Pre-Pay 3 Shipments",
+      "price": 12
+    },
+    {
+      "id": 4,
+      "type": "prepay-4",
+      "label": "Pre-Pay 4 Shipments",
+      "price": 14
+    },
+    {
+      "id": 5,
+      "type": "prepay-6",
+      "label": "Pre-Pay 6 Shipments",
+      "price": 18
+    }
+  ]
+}

@@ -38,6 +38,7 @@ input[type="checkbox"]:checked {
     padding: .75rem .875rem;
     border-radius:0;
     font-size: 1.125rem;
+    line-height:1;
 }
 #orderOptions .tabs{
     background-color: #fff;
@@ -54,12 +55,7 @@ color: #29353A;
     border-radius: .25rem;
     background: #CEEBB8;
 }
-#orderOptions .oo-wrap {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0rem .25rem 1rem 0rem rgba(0, 0, 0, 0.17);
-}
+
 
 #orderOptions h2 {
     font-size: 1.125em;
@@ -98,7 +94,10 @@ color: #29353A;
     font-weight: 900;
 }
 
-
+#orderOptions .delivery-btn.selected{
+    background: #EFF6E4;
+    border-color: #64a535;
+}
 
 
 #orderOptions #submitBtn {
@@ -278,11 +277,15 @@ color: #29353A;
     .option-label {
         width: 95%
     }
+        #orderOptions .tabs {
+        width: 40%;
+    }
 }
 
 @media(min-width:1200px) {
-    #orderOptions .oo-wrap {
-        padding: 2rem 1.5rem;
+
+        #orderOptions .tabs {
+        width: 30%;
     }
     .tab-content{
         padding: 2.25rem 1.5rem;
@@ -290,4 +293,11 @@ color: #29353A;
     .price-col{
         padding-left: 2.813rem;
     }
+        #orderOptions .option-cat .btn-callout, #orderOptions .option-cat button {
+        width: 180px;
+    }
+}
+
+@media(min-width:1440px){
+
 }

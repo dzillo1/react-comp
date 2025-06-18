@@ -8,9 +8,9 @@ function DaysMealsWeekOption(){
             };
 
     return(
-        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between">
+        <div id="progTypeOptions" className="option-cat d-flex flex-column mb-3 flex-md-row justify-content-md-between align-items-md-center">
             <p className="option-title d-flex align-items-center justify-content-between flex-md-column align-items-md-start">
-                <span className="tk-korolev fw-700">Days of Meals per week</span> 
+                <span className="tk-korolev fw-700">Days of Meals<br className="d-none d-md-block"/> per week</span> 
                 <a 
                 href="#" 
                // onClick={}
