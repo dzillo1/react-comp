@@ -1,4 +1,5 @@
 
+import React, { useState, useEffect } from "react";
 import DaysMealsWeekOption from "./DaysMealsWeekOption";
 import MealPlanOption from "./MealPlanOption";
 import MyAgeOption from "./MyAgeOption";
@@ -12,8 +13,40 @@ type TabContentProps = {
 };
 
 function TabContent({type}: TabContentProps) {
+  const [selectedShip, setSelectedShip] = useState("autodelivery");
+  const [pricePerDay, setpricePerDay] = useState(11.07);
+  const [todaysPrice, settodaysPrice] = useState(309.99);
+  const [fullPrice, setfullPrice] = useState(619.98);
+  const [shipmentAmount, setshipmentAmount] = useState(2);
+  const [prePay2Save, setprePay2Save] = useState(62);
 
-    
+      useEffect(() => {
+    switch (selectedShip) {
+      case "bogo":
+        setshipmentAmount(2);
+        setprePay2Save(62);
+        break;
+      case "pre3pay":
+        setshipmentAmount(3);
+        setprePay2Save(140);
+        break;
+      case "pre4pay":
+        setshipmentAmount(4);
+        setprePay2Save(211);
+        break;
+      case "pre6pay":
+        setshipmentAmount(6);
+        setprePay2Save(409);
+        break;
+      default:
+        setshipmentAmount(2);
+        setprePay2Save(62);
+    }
+  }, [selectedShip]);
+
+
+
+
     return (
        
             <div className="container">
@@ -28,19 +61,38 @@ function TabContent({type}: TabContentProps) {
                         <MyAgeOption />
                         <DaysMealsWeekOption />
                         <MenuOption />
-                        <ShipmentOption />
+                        <ShipmentOption selectedShip={selectedShip} setSelectedShip={setSelectedShip} />
                     </div>
                     <div className="col-12 col-lg-6 price-col">
-                        <div className="pricing-summary d-flex flex-column gap-3">
+                        <div className="pricing-summary d-flex flex-column gap-2">
                             <div className="border-bottom tk-korolev pb-2 d-flex justify-content-between">
                                 <p>
                                     {type === "partners" ? "Price per day per person" : "Price per day"}
                                 </p>
-                                <p className="price-day">$11.07</p>
+                                <p className="price-day">{`$${pricePerDay}`}</p>
                             </div>
-                            <div className=" tk-korolev pb-2 d-flex justify-content-between">
+
+                            {(selectedShip === "bogo" ||
+                                selectedShip === "pre3pay" ||
+                                selectedShip === "pre4pay" ||
+                                selectedShip === "pre6pay") && (
+                                    <div id="shipmentDiscount" className="border-bottom">
+                                    <div className="d-flex justify-content-between mb-2">
+                                        <p>Full price:</p>
+                                        <p className="price-today">{`$${fullPrice}`}</p>
+                                    </div>
+                                    <div className="delivery-savings d-flex justify-content-between pb-2">
+                                        <p>Pay For {shipmentAmount} Shipments Discount:</p>
+                                        <p>{`-$${prePay2Save}.00`}</p>
+                                    </div>
+                                   
+                                    </div>
+                                )}
+
+
+                            <div className="arial pb-3 d-flex justify-content-between fw-700">
                                 <p>Today's Price:</p>
-                                <p>$309.99</p>
+                                <p>{`$${todaysPrice}`}</p>
                             </div>
                         </div>
                         <ShakesOffer />

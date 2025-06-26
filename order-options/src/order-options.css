@@ -12,6 +12,16 @@ p, h2{
 .fw-900{
     font-weight:900;
 }
+.fw-700{
+    font-weight:700;
+}
+#shipmentDiscount, .arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delivery-savings p{
+    color:#006B00;
+    font-weight: 700;
+}
 input[type=checkbox] {
     background: #fff;
     border-color: #ccc;

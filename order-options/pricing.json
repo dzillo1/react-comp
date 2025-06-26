@@ -1,0 +1,53 @@
+{
+  "programs": [
+    {
+      "id": 1,
+      "gender": "Women",
+      "plan": "signature",
+      "days": "5 day",
+      "shipment": "auto delivery",
+      "price-per-day": 11.07,
+      "todays price": 309.99
+    },
+    {
+      "id": 2,
+      "gender": "Women",
+      "plan": "high protein",
+      "days": "5 day",
+      "shipment": "auto delivery",
+      "price-per-day": 12.50,
+      "todays price": 349.99
+    },
+    {
+      "id": 3,
+      "gender": "Women",
+      "plan": "signature",
+      "days": "7 day",
+      "shipment": "auto delivery",
+      "price-per-day": 13.04,
+      "todays price": 364.99
+    }
+    ,
+    {
+      "id": 4,
+      "gender": "Women",
+      "plan": "high protein",
+      "days": "7 day",
+      "shipment": "auto delivery",
+      "price-per-day": 14.46,
+      "todays price": 404.99
+    }
+        ,
+    {
+      "id": 5,
+      "gender": "Women",
+      "plan": "signature",
+      "days": "5 day",
+      "shipment": "pay 2 shipments",
+      "price-per-day": 9.96,
+      "full price": 619.98,
+      "shipment discount": 62.00,
+      "todays price": 557.98
+    }
+  ]
+}

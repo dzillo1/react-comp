@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 
+type ShipmentOptionProps = {
+    selectedShip: string;
+    setSelectedShip: (value: string) => void;
+};
 
-function ShipmentOption(){
 
-    const [selectedShip, setSelectedShip] = useState("autodelivery");
+
+
+function ShipmentOption({ selectedShip, setSelectedShip }: ShipmentOptionProps){
+
+
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         setSelectedShip(e.currentTarget.value);
@@ -12,9 +19,13 @@ function ShipmentOption(){
     const [prePaySave, setPrePaySave] = useState(409);
     const [autoDeliveryPrice, setautoDeliveryPrice] = useState(309.99);
     const [bogoPrice, setbogoPrice] = useState(278.99);
-
-
-
+    const [prePay2Save, setprePay2Save] = useState(62);
+    const [pre3PayPrice, setpre3PayPrice] = useState(263.49);
+    const [prePay3Save, setprePay3Save] = useState(140);
+    const [pre4PayPrice, setpre4PayPrice] = useState(257.29);
+    const [prePay4Save, setprePay4Save] = useState(211);
+    const [pre6PayPrice, setpre6PayPrice] = useState(241.79);
+    const [prePay6Save, setprePay6Save] = useState(409);
     
 
     return (
@@ -66,7 +77,7 @@ function ShipmentOption(){
                                             <span className="per">/shipment</span>
                                         </div>
                                     </div>
-                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $62</span> 
+                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/> {`$${prePay2Save}`}</span> 
                                 </button>
     
                                 <button 
@@ -84,12 +95,12 @@ function ShipmentOption(){
                                     </span> 
                                     <div>
                                         <div className="d-flex">
-                                            <span className="del-price">$263.49 </span> 
+                                            <span className="del-price">{`$${pre3PayPrice}`}</span> 
                                             <span className="per">/shipment</span>
                                         </div>
                                     </div> 
                                     </div>
-                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $140</span> 
+                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/>{`$${prePay3Save}`}</span> 
                                 </button>
     
                                 <button 
@@ -107,13 +118,13 @@ function ShipmentOption(){
                                         </span> 
                                         <div>
                                             <div className="d-flex">
-                                                <span className="del-price"> $257.29 </span> 
+                                                <span className="del-price">{`$${pre4PayPrice}`}</span> 
                                                 <span className="per">/shipment
                                                 </span>
                                             </div>
                                         </div> 
                                     </div>
-                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $211</span> 
+                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/>{`$${prePay4Save}`}</span> 
                                 </button>
     
                                 <button 
@@ -131,12 +142,12 @@ function ShipmentOption(){
                                         </span> 
                                         <div>
                                             <div className="d-flex">
-                                                <span className="del-price"> $241.79 </span> 
+                                                <span className="del-price">{`$${pre6PayPrice}`}</span> 
                                                 <span className="per">/shipment</span>
                                             </div>
                                         </div> 
                                     </div>
-                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/> $409</span>
+                                    <span className="save ms-auto">Save<br className="d-block d-lg-none"/>{`$${prePay6Save}`}</span>
                                 </button>
 
                                <div className="d-flex gap-2">
