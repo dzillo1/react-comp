@@ -5,10 +5,26 @@
       "gender": "Women",
       "plan": "signature",
       "days": "5 day",
-      "shipment": "auto delivery",
+      "shipment-amount": 1,
       "price-per-day": 11.07,
-      "todays price": 309.99
-    },
+      "todays price": 309.99,
+      "prepay save": 409,
+      "auto-delivery": 309.99,
+      "pay-2-shipments": 278.98,
+      "2-shipment full price": 619.98,
+      "your 2-shipment price": 557.98,
+      "2-shipment-discount": 62.00,
+      "pay-3-shipments": 263.49,
+      "3-shipment-discount": 140.00,
+      "your 3-shipment price": 790.47,
+      "pay-4-shipments": 257.29,
+      "4-shipment-discount": 211.00,
+      "your 4-shipment price": 1029.17,
+      "pay-6-shipments": 241.79,
+      "6-shipment-discount": 409.00,
+      "your 6-shipment price": 1450.75
+    }
+    ,
     {
       "id": 2,
       "gender": "Women",
@@ -16,7 +32,16 @@
       "days": "5 day",
       "shipment": "auto delivery",
       "price-per-day": 12.50,
-      "todays price": 349.99
+      "todays price": 349.99,
+      "auto-delivery": 349.99,
+      "pay-2-shipments": 314.99,
+      "2-shipment-discount": 70.00,
+      "pay-3-shipments": 297.49,
+      "3-shipment-discount": 158.00,
+      "pay-4-shipments": 290.49,
+      "4-shipment-discount": 238.00,
+      "pay-6-shipments": 272.99,
+      "6-shipment-discount": 462.00
     },
     {
       "id": 3,
