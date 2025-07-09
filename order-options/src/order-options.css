@@ -79,7 +79,7 @@ color: #29353A;
     flex-grow: 1;
 }
 
-#orderOptions .option-cat button {
+.option-cat button {
     background: #fff;
     border: 1px solid #bfc2c4;
     border-radius: 6.25rem;
@@ -98,13 +98,13 @@ color: #29353A;
 }
 
 
-#orderOptions .option-cat button.selected {
+#orderOptions .option-cat button.active {
     background: #f0f7ec;
     border: 2px solid #64a535;
     font-weight: 900;
 }
 
-#orderOptions .delivery-btn.selected{
+#orderOptions .shipment-options button.active{
     background: #EFF6E4;
     border-color: #64a535;
 }
@@ -125,7 +125,7 @@ color: #29353A;
     line-height:1;
 }
 
-#orderOptions #deliveryOptions button {
+#orderOptions .shipment-options button {
     height: 4rem;
     width: 100%;
     text-align: left;
@@ -228,7 +228,7 @@ color: #29353A;
     border-top: 1px solid #7C7F82;
     margin:0;
 }
-.delivery-btn{
+.shipment-options button{
     display: flex;
     align-items:center;
     height: 60px;

@@ -1,6 +1,8 @@
+import { useState } from "react";
 import MealPlanOption from "./MealPlanOption";
 
 function TabContentPartner() {
+
     return (
         <div className="bg-white p-3">
             <div className="container">
@@ -12,7 +14,18 @@ function TabContentPartner() {
                 </div>
                 <div className="row flex-nowrap gap-3 align-items-center">
                     <div className="col-12 col-md-6">
-    <MealPlanOption/>
+                        {/*
+                            Assuming selectedPlan is a string, adjust the type if needed.
+                        */}
+                        {(() => {
+                            const [selectedPlan, setSelectedPlan] = useState<string>("");
+                            return (
+                                <MealPlanOption
+                                    selectedPlan={selectedPlan}
+                                    setSelectedPlan={setSelectedPlan}
+                                />
+                            );
+                        })()}
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="price-per-day d-flex justify-content-between">

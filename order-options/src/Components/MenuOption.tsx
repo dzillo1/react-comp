@@ -33,7 +33,7 @@ function MenuOptions(){
                         value="favorite" 
                         id="favorites" 
                         name="menuoption" 
-                        className={selectedPlan === "favorite" ? "selected" : ""}>
+                        className={selectedPlan === "favorite" ? "active" : ""}>
                             Chef’s Picks
                         </button>
                     </div>
@@ -45,7 +45,7 @@ function MenuOptions(){
                     value="custom" 
                     id="custom" 
                     name="menuoption" 
-                    className={selectedPlan === "custom" ? "selected" : ""}>
+                    className={selectedPlan === "custom" ? "active" : ""}>
                         I’ll Pick My Menu
                     </button>
                 </div>

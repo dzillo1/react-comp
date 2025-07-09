@@ -28,7 +28,7 @@ function MyAgeOption(){
                     id="allAges" 
                     name="myage" 
                     aria-pressed="false" 
-                    className={selectedAge === "allages" ? "selected" : ""}
+                    className={selectedAge === "allages" ? "active" : ""}
                 >All Ages
                 </button> 
                     <button 
@@ -38,7 +38,7 @@ function MyAgeOption(){
                     id="over50" 
                     name="myage" 
                     aria-pressed="false" 
-                    className={selectedAge === "over50" ? "selected" : ""}
+                    className={selectedAge === "over50" ? "active" : ""}
                     >50 and Over
                     </button>
             </div>
