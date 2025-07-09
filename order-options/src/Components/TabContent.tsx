@@ -53,25 +53,25 @@ useEffect(() => {
       newShipmentAmount = 2;
       newFullPrice = program["2-shipment full price"];
       newPrePaySave = program["2-shipment-discount"];
-      newTodaysPrice = newFullPrice - newPrePaySave;
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
       break;
     case "pre3pay":
       newShipmentAmount = 3;
       newFullPrice = program["3-shipment full price"];
       newPrePaySave = program["3-shipment-discount"];
-      newTodaysPrice = newFullPrice - newPrePaySave;
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
       break;
     case "pre4pay":
       newShipmentAmount = 4;
       newFullPrice = program["4-shipment full price"];
       newPrePaySave = program["4-shipment-discount"];
-      newTodaysPrice = newFullPrice - newPrePaySave;
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
       break;
     case "pre6pay":
       newShipmentAmount = 6;
       newFullPrice = program["6-shipment full price"];
       newPrePaySave = program["6-shipment-discount"];
-      newTodaysPrice = newFullPrice - newPrePaySave;
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
       break;
     default:
       newShipmentAmount = 1;
@@ -130,7 +130,7 @@ useEffect(() => {
                 </div>
                 <div className="delivery-savings d-flex justify-content-between pb-2">
                   <p>Pay For {shipmentAmount} Shipments Discount:</p>
-                  <p>{`-$${prePaySave}.00`}</p>
+                  <p>{`-$${prePaySave.toFixed(2)}`}</p>
                 </div>
               </div>
             )}
