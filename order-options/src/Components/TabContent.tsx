@@ -6,7 +6,7 @@ import MyAgeOption from "./MyAgeOption";
 import MenuOption from "./MenuOption";
 import ShipmentOption from "./ShipmentOption";
 import ShakesOffer from "./ShakesOffer";
-//import mbgImg from "../assets/2020-MBG-GoldSeal.svg"
+import mbgImg from "../assets/2020-MBG-GoldSeal.svg"
 
 type TabContentProps = {
   type: string;
@@ -104,7 +104,7 @@ function TabContent({type}: TabContentProps) {
 
                     {type !== 'partners' && (
                         <div className="mbg  mt-4 d-flex justify-content-center align-items-center gap-2">
-                            <img alt="Money Back Guarantee" height="47" width="auto" src="/assets/2020-MBG-GoldSeal.svg" />
+                            <img alt="Money Back Guarantee" height="47" width="auto" src={mbgImg} />
                             <p className="mbg-text tk-korolev fw-900">Try it and love it. Money back guaranteed. <a href="#MBG" data-bs-target="#MBG" data-bs-toggle="modal" className="more-info-link">Details</a></p>
                         </div>
                     )}

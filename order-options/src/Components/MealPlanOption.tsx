@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function MealPlanOption(){
 
-    const [selectedPlan, setSelectedPlan] = useState("classic");
+    const [selectedPlan, setSelectedPlan] = useState("signature");
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         setSelectedPlan(e.currentTarget.value);
@@ -26,10 +26,10 @@ function MealPlanOption(){
                 type="button" 
                 aria-pressed="true" 
                onClick={handleClick} 
-                value="classic" 
-                id="classic" 
+                value="signature" 
+                id="signature" 
                 name="meal-plan" 
-                className={selectedPlan === "classic" ? "selected" : ""}
+                className={selectedPlan === "signature" ? "selected" : ""}
                 >Signature
                 </button> 
                 <div className="d-flex flex-column btn-callout">

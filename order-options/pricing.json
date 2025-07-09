@@ -39,7 +39,7 @@
     {
       "id": 2,
       "gender": "Women",
-      "plan": "high protein",
+      "plan": "high-protein",
       "days": "5 day",
       "shipment": "auto delivery",
       "price-per-day": 12.50,
@@ -111,7 +111,7 @@
     {
       "id": 4,
       "gender": "Women",
-      "plan": "high protein",
+      "plan": "high-protein",
       "days": "7 day",
       "shipment": "auto delivery",
       "price-per-day": 14.46,
