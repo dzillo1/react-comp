@@ -10,17 +10,28 @@
       "todays price": 309.99,
       "prepay save": 409,
       "auto-delivery": 309.99,
+
       "pay-2-shipments": 278.98,
+      "2-shipment price-day": 9.96,
       "2-shipment full price": 619.98,
-      "your 2-shipment price": 557.98,
       "2-shipment-discount": 62.00,
+      "your 2-shipment price": 557.98,
+      
       "pay-3-shipments": 263.49,
+      "3-shipment price-day": 9.41,
+      "3-shipment full price": 929.97,
       "3-shipment-discount": 140.00,
       "your 3-shipment price": 790.47,
+
       "pay-4-shipments": 257.29,
+      "4-shipment price-day": 9.19,
+      "4-shipment full price":1239.96,
       "4-shipment-discount": 211.00,
       "your 4-shipment price": 1029.17,
+
       "pay-6-shipments": 241.79,
+      "6-shipment price-day": 8.64,
+      "6-shipment full price": 1859.94,
       "6-shipment-discount": 409.00,
       "your 6-shipment price": 1450.75
     }
@@ -33,16 +44,34 @@
       "shipment": "auto delivery",
       "price-per-day": 12.50,
       "todays price": 349.99,
+      "prepay save": 462,
       "auto-delivery": 349.99,
+
       "pay-2-shipments": 314.99,
+      "2-shipment price-day":11.25,
+      "2-shipment full price": 699.98,
       "2-shipment-discount": 70.00,
+      "your 2-shipment price": 629.98,
+
       "pay-3-shipments": 297.49,
+      "3-shipment price-day": 10.62,
+      "3-shipment full price": 1049.97,
       "3-shipment-discount": 158.00,
+      "your 3-shipment price": 892.47,
+
       "pay-4-shipments": 290.49,
+      "4-shipment price-day": 10.37,
+      "4-shipment full price": 1399.96,
       "4-shipment-discount": 238.00,
+      "your 4-shipment price": 1161.97,
+
       "pay-6-shipments": 272.99,
-      "6-shipment-discount": 462.00
-    },
+      "6-shipment price-day": 9.75,
+      "6-shipment full price": 2099.94,
+      "6-shipment-discount": 462.00,
+      "your 6-shipment price":1637.95
+    }
+    ,
     {
       "id": 3,
       "gender": "Women",
@@ -50,7 +79,33 @@
       "days": "7 day",
       "shipment": "auto delivery",
       "price-per-day": 13.04,
-      "todays price": 364.99
+      "todays price": 364.99,
+      "prepay save": 482,
+      "auto-delivery": 364.99,
+
+      "pay-2-shipments": 328.49,
+      "2-shipment price-day": 11.73,
+      "2-shipment full price": 729.98,
+      "2-shipment-discount": 73.00,
+      "your 2-shipment price": 656.98,
+
+      "pay-3-shipments": 310.24,
+      "3-shipment price-day": 11.08,
+      "3-shipment full price": 1094.97,
+      "3-shipment-discount": 164.25,
+      "your 3-shipment price": 930.72,
+
+      "pay-4-shipments": 302.94,
+      "4-shipment price-day": 10.82,
+      "4-shipment full price": 1459.96,
+      "4-shipment-discount": 248.19,
+      "your 4-shipment price": 1211.77,
+
+      "pay-6-shipments": 284.69,
+      "6-shipment price-day": 10.17,
+      "6-shipment full price": 2189.94,
+      "6-shipment-discount": 481.79,
+      "your 6-shipment price":1708.15
     }
     ,
     {
@@ -60,19 +115,34 @@
       "days": "7 day",
       "shipment": "auto delivery",
       "price-per-day": 14.46,
-      "todays price": 404.99
+      "todays price": 404.99,
+      "prepay save": 482,
+      "auto-delivery": 404.99,
+
+      "pay-2-shipments": 364.49,
+      "2-shipment price-day": 13.02,
+      "2-shipment full price": 809.98,
+      "2-shipment-discount": 81.00,
+      "your 2-shipment price": 728.98,
+
+      "pay-3-shipments": 344.24,
+      "3-shipment price-day": 12.29,
+      "3-shipment full price": 1214.97,
+      "3-shipment-discount": 182.25,
+      "your 3-shipment price": 1032.72,
+
+      "pay-4-shipments": 336.14,
+      "4-shipment price-day": 12.01,
+      "4-shipment full price": 1619.96,
+      "4-shipment-discount": 275.39,
+      "your 4-shipment price": 1344.57,
+
+      "pay-6-shipments": 315.89,
+      "6-shipment price-day": 11.28,
+      "6-shipment full price": 2429.94,
+      "6-shipment-discount": 534.59,
+      "your 6-shipment price": 1895.35
     }
-        ,
-    {
-      "id": 5,
-      "gender": "Women",
-      "plan": "signature",
-      "days": "5 day",
-      "shipment": "pay 2 shipments",
-      "price-per-day": 9.96,
-      "full price": 619.98,
-      "shipment discount": 62.00,
-      "todays price": 557.98
-    }
+
   ]
 }
