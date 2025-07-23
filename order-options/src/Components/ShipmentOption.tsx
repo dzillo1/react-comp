@@ -2,19 +2,32 @@
 type ShipmentOptionProps = {
   selectedShip: string;
   setSelectedShip: (ship: string) => void;
+  autoDeliveryPrice: number;
+  prePaySave: number;
+  bogoPrice: number;
+  prePay2Save: number;
+  pre3PayPrice: number;
+  prePay3Save: number;
+  pre4PayPrice: number;
+  prePay4Save: number;
+  pre6PayPrice: number;
+  prePay6Save: number;
 };
-const autoDeliveryPrice = 309.99;
-const prePaySave = 409;
-const bogoPrice = 278.99;
-const prePay2Save = 62;
-const pre3PayPrice = 263.49;
-const prePay3Save = 140;
-const pre4PayPrice = 257.29;
-const prePay4Save = 211;        
-const pre6PayPrice = 241.79;
-const prePay6Save = 409;
 
-function ShipmentOption({ selectedShip, setSelectedShip }: ShipmentOptionProps) {
+
+function ShipmentOption({   selectedShip,
+  setSelectedShip,
+  autoDeliveryPrice,
+  prePaySave,
+  bogoPrice,
+  prePay2Save,
+  pre3PayPrice,
+  prePay3Save,
+  pre4PayPrice,
+  prePay4Save,
+  pre6PayPrice,
+  prePay6Save }: ShipmentOptionProps) {
+
   return (
     <div className="shipment-options ">
         <h2 className="tk-korolev mb-2">Purchase Options</h2>
@@ -33,13 +46,13 @@ function ShipmentOption({ selectedShip, setSelectedShip }: ShipmentOptionProps) 
         onClick={() => setSelectedShip("autodelivery")}
       >
          <div className="d-flex flex-column">
-                                        <div className="del-type fw-900 tk-korolev">
-                                            Monthly Auto-Delivery
-                                        </div> 
-                                    <div className="d-flex">
-                                        <div className="del-price">{`$${autoDeliveryPrice}`}</div> 
-                                        <div className="per">/first shipment</div></div>
-                                    </div>
+            <div className="del-type fw-900 tk-korolev">
+                Monthly Auto-Delivery
+            </div> 
+          <div className="d-flex">
+            <div className="del-price">{`$${autoDeliveryPrice}`}</div> 
+            <div className="per">/first shipment</div></div>
+          </div>
       </button>
 
 

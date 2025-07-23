@@ -6,13 +6,15 @@ import MenuOption from "./MenuOption";
 import ShipmentOption from "./ShipmentOption";
 import ShakesOffer from "./ShakesOffer";
 import mbgImg from "../assets/2020-MBG-GoldSeal.svg";
-import pricingData from "../../pricing.json"; // <-- Import pricing.json
+import pricingData from "../../pricing.json"; 
 
 type TabContentProps = {
+
   type: string;
 };
 
 function TabContent({ type }: TabContentProps) {
+
   // State for all options
   const [selectedMealPlan, setSelectedMealPlan] = useState("signature");
   const [selectedDays, setSelectedDays] = useState("most-days");
@@ -23,7 +25,19 @@ function TabContent({ type }: TabContentProps) {
   const [todaysPrice, setTodaysPrice] = useState(0);
   const [fullPrice, setFullPrice] = useState(0);
   const [shipmentAmount, setShipmentAmount] = useState(2);
-  const [prePaySave, setPrePaySave] = useState(0);
+  
+  //shipping state
+const [autoDeliveryPrice, setAutoDeliveryPrice] = useState(0);
+const [prePaySave, setPrePaySave] = useState(0);
+const [bogoPrice, setBogoPrice] = useState(0);
+const [prePay2Save, setPrePay2Save] = useState(0);
+const [pre3PayPrice, setPre3PayPrice] = useState(0);
+const [prePay3Save, setPrePay3Save] = useState(0);
+const [pre4PayPrice, setPre4PayPrice] = useState(0);
+const [prePay4Save, setPrePay4Save] = useState(0);        
+const [pre6PayPrice, setPre6PayPrice] = useState(0);
+const [prePay6Save, setPrePay6Save] = useState(0);
+
 
   // Map UI state to pricing.json keys
   const gender = type === "women" ? "women" : type === "men" ? "men" : "partners";
@@ -38,10 +52,37 @@ function TabContent({ type }: TabContentProps) {
       p.days === days
   );
 
+
+  console.log('TabContent lookup:', {
+  gender,
+  plan,
+  days,
+  found: pricingData.programs.some(
+    (p) => p.gender === gender && p.plan === plan && p.days === days
+  ),
+  program
+});
+
+
 useEffect(() => {
   if (!program) return;
 
   setPricePerDay(program["price-per-day"]);
+  setTodaysPrice(program["todays price"]);
+  setFullPrice(program["todays price"]);
+  setShipmentAmount(1);
+
+  // Always update these when program changes
+  setAutoDeliveryPrice(program["auto-delivery"] ?? 0);
+  setPrePaySave(program["prepay save"] ?? 0);
+  setBogoPrice(program["pay-2-shipments"] ?? 0);
+  setPrePay2Save(program["2-shipment-discount"] ?? 0);
+  setPre3PayPrice(program["pay-3-shipments"] ?? 0);
+  setPrePay3Save(program["3-shipment-discount"] ?? 0);
+  setPre4PayPrice(program["pay-4-shipments"] ?? 0);
+  setPrePay4Save(program["4-shipment-discount"] ?? 0);
+  setPre6PayPrice(program["pay-6-shipments"] ?? 0);
+  setPrePay6Save(program["6-shipment-discount"] ?? 0);
 
   let newFullPrice = program["todays price"];
   let newPrePaySave = 0;
@@ -53,25 +94,25 @@ useEffect(() => {
       newShipmentAmount = 2;
       newFullPrice = program["2-shipment full price"];
       newPrePaySave = program["2-shipment-discount"];
-      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2));
       break;
     case "pre3pay":
       newShipmentAmount = 3;
       newFullPrice = program["3-shipment full price"];
       newPrePaySave = program["3-shipment-discount"];
-      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2));
       break;
     case "pre4pay":
       newShipmentAmount = 4;
       newFullPrice = program["4-shipment full price"];
       newPrePaySave = program["4-shipment-discount"];
-      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2));
       break;
     case "pre6pay":
       newShipmentAmount = 6;
       newFullPrice = program["6-shipment full price"];
       newPrePaySave = program["6-shipment-discount"];
-      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2))
+      newTodaysPrice = Number((newFullPrice - newPrePaySave).toFixed(2));
       break;
     default:
       newShipmentAmount = 1;
@@ -80,21 +121,11 @@ useEffect(() => {
       newTodaysPrice = program["todays price"];
   }
 
-    // Debug log
-  console.log({
-    selectedShip,
-    newFullPrice,
-    newPrePaySave,
-    newTodaysPrice,
-    newShipmentAmount,
-    program
-  });
-
   setShipmentAmount(newShipmentAmount);
   setFullPrice(newFullPrice);
   setPrePaySave(newPrePaySave);
   setTodaysPrice(newTodaysPrice);
-}, [program, selectedShip]);
+}, [program, selectedShip, selectedMealPlan, selectedDays, type]);
 
   return (
     <div className="container">
@@ -109,7 +140,18 @@ useEffect(() => {
           <MyAgeOption />
           <DaysMealsWeekOption selectedDays={selectedDays} setSelectedDays={setSelectedDays} />
           <MenuOption />
-          <ShipmentOption selectedShip={selectedShip} setSelectedShip={setSelectedShip} />
+          <ShipmentOption selectedShip={selectedShip}
+  setSelectedShip={setSelectedShip}
+  autoDeliveryPrice={autoDeliveryPrice}
+  prePaySave={prePaySave}
+  bogoPrice={bogoPrice}
+  prePay2Save={prePay2Save}
+  pre3PayPrice={pre3PayPrice}
+  prePay3Save={prePay3Save}
+  pre4PayPrice={pre4PayPrice}
+  prePay4Save={prePay4Save}
+  pre6PayPrice={pre6PayPrice}
+  prePay6Save={prePay6Save} />
         </div>
         <div className="col-12 col-lg-6 price-col">
           <div className="pricing-summary d-flex flex-column gap-2">
@@ -117,7 +159,7 @@ useEffect(() => {
               <p>
                 {type === "partners" ? "Price per day per person" : "Price per day"}
               </p>
-              <p className="price-day">{`$${pricePerDay}`}</p>
+              <p className="price-day">{`$${pricePerDay.toFixed(2)}`}</p>
             </div>
             {(selectedShip === "bogo" ||
               selectedShip === "pre3pay" ||
@@ -141,9 +183,9 @@ useEffect(() => {
           </div>
           <ShakesOffer />
           {type !== 'partners' && (
-            <p className="partner-link d-flex mb-3">
+            <div className="partner-link d-flex mb-3">
                <p> Want to lose weight with a partner? <a type="button"  href="/diet-plans/partners-diet-plan" className="text-medium">Learn more</a></p>
-            </p>
+            </div>
           )}
           <button type="submit" id="submitBtn" className="btn btn-default">Continue</button>
           {type !== 'partners' && (
@@ -158,6 +200,7 @@ useEffect(() => {
       </div>
     </div>
   );
+  
 }
 
 export default TabContent
