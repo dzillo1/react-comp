@@ -51,17 +51,6 @@ const [prePay6Save, setPrePay6Save] = useState(0);
   );
 
 
-  console.log('TabContent lookup:', {
-  gender,
-  plan,
-  days,
-  found: pricingData.programs.some(
-    (p) => p.gender === gender && p.plan === plan && p.days === days
-  ),
-  program
-});
-
-
 useEffect(() => {
   if (!program) return;
 
