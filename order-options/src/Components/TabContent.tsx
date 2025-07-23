@@ -9,7 +9,6 @@ import mbgImg from "../assets/2020-MBG-GoldSeal.svg";
 import pricingData from "../../pricing.json"; 
 
 type TabContentProps = {
-
   type: string;
 };
 
@@ -37,7 +36,6 @@ const [pre4PayPrice, setPre4PayPrice] = useState(0);
 const [prePay4Save, setPrePay4Save] = useState(0);        
 const [pre6PayPrice, setPre6PayPrice] = useState(0);
 const [prePay6Save, setPrePay6Save] = useState(0);
-
 
   // Map UI state to pricing.json keys
   const gender = type === "women" ? "women" : type === "men" ? "men" : "partners";
