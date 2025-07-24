@@ -287,6 +287,149 @@
       "6-shipment-discount": 587.00,
       "your 6-shipment price": 2082.55
     }
+    ,
+    {
+      "id": 9,
+      "gender": "partners",
+      "plan": "signature",
+      "days": "5 day",
+      "shipment-amount": 1,
+      "price-per-day": 10.02,
+      "todays price": 280.49,
+      "prepay save": 409,
+      "auto-delivery": 280.49,
 
+      "pay-2-shipments": 238.42,
+      "2-shipment price-day": 9.02,
+      "2-shipment full price": 560.88,
+      "2-shipment-discount": 56.00,
+      "your 2-shipment price": 504.88,
+      
+      "pay-3-shipments": 238.42,
+      "3-shipment price-day": 8.51,
+      "3-shipment full price": 841.25,
+      "3-shipment-discount": 126.00,
+      "your 3-shipment price": 715.25,
+
+      "pay-4-shipments": 232.81,
+      "4-shipment price-day": 8.31,
+      "4-shipment full price":1399.97,
+      "4-shipment-discount": 191.00,
+      "your 4-shipment price": 1122.23,
+
+      "pay-6-shipments": 218.78,
+      "6-shipment price-day": 7.81,
+      "6-shipment full price": 1682.70,
+      "6-shipment-discount": 370.00,
+      "your 6-shipment price": 1312.70
+    }
+    ,
+    {
+      "id": 10,
+      "gender": "partners",
+      "plan": "high-protein",
+      "days": "5 day",
+      "shipment": "auto delivery",
+      "price-per-day": 11.23,
+      "todays price": 314.49,
+      "prepay save": 462,
+      "auto-delivery": 314.49,
+
+      "pay-2-shipments": 283.04,
+      "2-shipment price-day":10.11,
+      "2-shipment full price": 626.08,
+      "2-shipment-discount": 63.00,
+      "your 2-shipment price": 566.08,
+
+      "pay-3-shipments": 267.32,
+      "3-shipment price-day": 9.55,
+      "3-shipment full price": 943.95,
+      "3-shipment-discount": 142.00,
+      "your 3-shipment price": 801.95,
+
+      "pay-4-shipments": 261.03,
+      "4-shipment price-day": 9.32,
+      "4-shipment full price": 1258.11,
+      "4-shipment-discount": 214.00,
+      "your 4-shipment price": 1044.11,
+
+      "pay-6-shipments": 245.30,
+      "6-shipment price-day": 8.76,
+      "6-shipment full price": 1886.82,
+      "6-shipment-discount": 415.00,
+      "your 6-shipment price": 1471.82
+    }
+    ,
+    {
+      "id": 11,
+      "gender": "partners",
+      "plan": "signature",
+      "days": "7 day",
+      "shipment": "auto delivery",
+      "price-per-day": 11.69,
+      "todays price": 327.24,
+      "prepay save": 482,
+      "auto-delivery": 327.24,
+
+      "pay-2-shipments": 294.52,
+      "2-shipment price-day": 10.52,
+      "2-shipment full price": 654.03,
+      "2-shipment-discount": 65.00,
+      "your 2-shipment price": 589.03,
+
+      "pay-3-shipments": 278.16,
+      "3-shipment price-day": 9.93,
+      "3-shipment full price": 981.47,
+      "3-shipment-discount": 147.00,
+      "your 3-shipment price": 834.47,
+
+      "pay-4-shipments": 271.61,
+      "4-shipment price-day": 9.70,
+      "4-shipment full price": 1309.44,
+      "4-shipment-discount": 223.00,
+      "your 4-shipment price": 1086.44,
+
+      "pay-6-shipments": 255.25,
+      "6-shipment price-day": 9.12,
+      "6-shipment full price": 1963.49,
+      "6-shipment-discount": 432.00,
+      "your 6-shipment price": 1531.49
+    }
+    ,
+    {
+      "id": 12,
+      "gender": "partners",
+      "plan": "high-protein",
+      "days": "7 day",
+      "shipment": "auto delivery",
+      "price-per-day": 12.90,
+      "todays price": 361.24,
+      "prepay save": 482,
+      "auto-delivery": 361.24,
+
+      "pay-2-shipments": 325.12,
+      "2-shipment price-day": 11.61,
+      "2-shipment full price": 722.23,
+      "2-shipment-discount": 72.00,
+      "your 2-shipment price": 650.23,
+
+      "pay-3-shipments": 307.06,
+      "3-shipment price-day": 10.97,
+      "3-shipment full price": 1084.17,
+      "3-shipment-discount": 163.00,
+      "your 3-shipment price": 921.17,
+
+      "pay-4-shipments": 299.83,
+      "4-shipment price-day": 10.71,
+      "4-shipment full price": 1445.32,
+      "4-shipment-discount": 246.00,
+      "your 4-shipment price": 1199.32,
+
+      "pay-6-shipments": 281.77,
+      "6-shipment price-day": 10.06,
+      "6-shipment full price": 2167.61,
+      "6-shipment-discount": 477.00,
+      "your 6-shipment price": 1690.61
+    }
   ]
 }
