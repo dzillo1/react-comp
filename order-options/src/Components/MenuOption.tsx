@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function MenuOptions(){
 
         const [selectedPlan, setSelectedPlan] = useState("favorite");
-    
         const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
             setSelectedPlan(e.currentTarget.value);
         };

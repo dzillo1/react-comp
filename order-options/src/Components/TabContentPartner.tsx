@@ -9,14 +9,11 @@ function TabContentPartner() {
                 <div className="row">
                 <div className="col-12 col-md-6 mb-3">
                         <h2>Customize your program</h2>
-                        
                     </div>
                 </div>
                 <div className="row flex-nowrap gap-3 align-items-center">
                     <div className="col-12 col-md-6">
-                        {/*
-                            Assuming selectedPlan is a string, adjust the type if needed.
-                        */}
+
                         {(() => {
                             const [selectedPlan, setSelectedPlan] = useState<string>("");
                             return (

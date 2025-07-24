@@ -1,5 +1,3 @@
-
-
 type DaysMealsWeekOptionProps = {
   selectedDays: string;
   setSelectedDays: (days: string) => void;

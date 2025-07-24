@@ -1,4 +1,3 @@
-
 type MealPlanOptionProps = {
   selectedPlan: string;
   setSelectedPlan: (plan: string) => void;

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 function ShakesOffer(){
     const [shakesAdded, setShakesAdded] = useState(false);
 
@@ -41,7 +40,7 @@ function ShakesOffer(){
                     <span className="text-green-darker fw-700">$39.98</span>
                 </p>
             </div> 
-{shakesAdded && (
+        {shakesAdded && (
             <div 
             id="flavSelect"
             className={`w-100 flav-select-transition${shakesAdded ? ' show' : ''}`}>
@@ -58,7 +57,7 @@ function ShakesOffer(){
                     </option>
                 </select>
             </div>
-   )}
+        )}
         </div>
     );
 }

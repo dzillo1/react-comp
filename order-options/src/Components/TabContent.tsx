@@ -42,7 +42,6 @@ const [prePay6Save, setPrePay6Save] = useState(0);
   const plan = selectedMealPlan;
   const days = selectedDays === "most-days" ? "5 day" : "7 day";
 
-  // Find the matching program in pricing.json
   const program = pricingData.programs.find(
     (p) =>
       p.gender === gender &&
@@ -59,7 +58,6 @@ useEffect(() => {
   setFullPrice(program["todays price"]);
   setShipmentAmount(1);
 
-  // Always update these when program changes
   setAutoDeliveryPrice(program["auto-delivery"] ?? 0);
   setPrePaySave(program["prepay save"] ?? 0);
   setBogoPrice(program["pay-2-shipments"] ?? 0);

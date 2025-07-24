@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function MyAgeOption(){
         const [selectedAge, setselectedAge] = useState("allages");
-    
         const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
             setselectedAge(e.currentTarget.value);
         };

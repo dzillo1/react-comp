@@ -1,4 +1,3 @@
-
 type ShipmentOptionProps = {
   selectedShip: string;
   setSelectedShip: (ship: string) => void;
@@ -13,7 +12,6 @@ type ShipmentOptionProps = {
   pre6PayPrice: number;
   prePay6Save: number;
 };
-
 
 function ShipmentOption({   selectedShip,
   setSelectedShip,
@@ -32,10 +30,9 @@ function ShipmentOption({   selectedShip,
     <div className="shipment-options ">
         <h2 className="tk-korolev mb-2">Purchase Options</h2>
          <div className="d-flex flex-column gap-3">
-                                <div className="d-flex align-items-center gap-2">
-                                    <p className="fw-700 tk-korolev">Pay monthly:</p> <hr/>
-                                </div>
-
+            <div className="d-flex align-items-center gap-2">
+                <p className="fw-700 tk-korolev">Pay monthly:</p> <hr/>
+            </div>
 
       <button
         type="button" 
@@ -55,11 +52,9 @@ function ShipmentOption({   selectedShip,
           </div>
       </button>
 
-
       <div className="d-flex align-items-center gap-2">
             <p className="fw-700 tk-korolev">{`or Pre-pay & Save up to $${prePaySave}!`}</p> <hr/>
        </div>
-
 
       <button
         type="button" 
@@ -70,17 +65,16 @@ function ShipmentOption({   selectedShip,
         onClick={() => setSelectedShip("bogo")}
       >
        <div className="d-flex flex-column justify-content-between">
-                                        <span className="del-type d-flex justify-content-between fw-900 tk-korolev">
-                                            Pay for 2 Shipments Now
-                                        </span> 
-                                        <div className="d-flex">
-                                            <span className="del-price">{`$${bogoPrice}`}</span> 
-                                            <span className="per">/shipment</span>
-                                        </div>
-                                    </div>
-                                    <span className="save ms-auto">Save <br className="d-block d-lg-none"/> {`$${prePay2Save}`}</span> 
+              <span className="del-type d-flex justify-content-between fw-900 tk-korolev">
+                  Pay for 2 Shipments Now
+              </span> 
+              <div className="d-flex">
+                  <span className="del-price">{`$${bogoPrice}`}</span> 
+                  <span className="per">/shipment</span>
+              </div>
+          </div>
+          <span className="save ms-auto">Save <br className="d-block d-lg-none"/> {`$${prePay2Save}`}</span> 
       </button>
-
 
       <button
         type="button" 
@@ -90,20 +84,19 @@ function ShipmentOption({   selectedShip,
         className={selectedShip === "pre3pay" ? "active" : ""}
         onClick={() => setSelectedShip("pre3pay")}
       >
-                                        <div className="d-flex flex-column">
-                                    <span className="del-type fw-900 tk-korolev">
-                                        Pay for 3 Shipments Now 
-                                    </span> 
-                                    <div>
-                                        <div className="d-flex">
-                                            <span className="del-price">{`$${pre3PayPrice}`}</span> 
-                                            <span className="per">/shipment</span>
-                                        </div>
-                                    </div> 
-                                    </div>
-                                    <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay3Save}`}</span> 
+        <div className="d-flex flex-column">
+        <span className="del-type fw-900 tk-korolev">
+            Pay for 3 Shipments Now 
+        </span> 
+        <div>
+            <div className="d-flex">
+                <span className="del-price">{`$${pre3PayPrice}`}</span> 
+                <span className="per">/shipment</span>
+            </div>
+        </div> 
+        </div>
+        <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay3Save}`}</span> 
       </button>
-
 
       <button
         type="button" 
@@ -114,20 +107,19 @@ function ShipmentOption({   selectedShip,
         onClick={() => setSelectedShip("pre4pay")}
       >
         <div className="d-flex flex-column">
-                                    <span className="del-type fw-900 tk-korolev">
-                                        Pay for 4 Shipments Now 
-                                        </span> 
-                                        <div>
-                                            <div className="d-flex">
-                                                <span className="del-price">{`$${pre4PayPrice}`}</span> 
-                                                <span className="per">/shipment
-                                                </span>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay4Save}`}</span> 
+        <span className="del-type fw-900 tk-korolev">
+            Pay for 4 Shipments Now 
+            </span> 
+            <div>
+                <div className="d-flex">
+                    <span className="del-price">{`$${pre4PayPrice}`}</span> 
+                    <span className="per">/shipment
+                    </span>
+                </div>
+            </div> 
+        </div>
+        <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay4Save}`}</span> 
       </button>
-
 
       <button
         type="button" 
@@ -138,19 +130,18 @@ function ShipmentOption({   selectedShip,
         onClick={() => setSelectedShip("pre6pay")}
       >
          <div className="ship-btn-txt">
-                                    <span className="del-type fw-900 tk-korolev">
-                                        Pay for 6 Shipments Now 
-                                        </span> 
-                                        <div>
-                                            <div className="d-flex">
-                                                <span className="del-price">{`$${pre6PayPrice}`}</span> 
-                                                <span className="per">/shipment</span>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay6Save}`}</span>
+            <span className="del-type fw-900 tk-korolev">
+                Pay for 6 Shipments Now 
+                </span> 
+                <div>
+                    <div className="d-flex">
+                        <span className="del-price">{`$${pre6PayPrice}`}</span> 
+                        <span className="per">/shipment</span>
+                    </div>
+                </div> 
+            </div>
+            <span className="save ms-auto">Save <br className="d-block d-lg-none"/>{`$${prePay6Save}`}</span>
       </button>
-
 
       </div>
     </div>
